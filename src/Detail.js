@@ -4,6 +4,7 @@ import {
   Text,
   View,
   Image,
+  ScrollView
 } from 'react-native';
 
 export default class Detail extends Component {
@@ -24,7 +25,27 @@ export default class Detail extends Component {
       });
     render() {
         return (
-            <Text>test</Text>
+            <ScrollView>
+                <View>
+                    <Text>爱定期 II</Text>
+                    <View>
+                        <View>
+                            <Text>9.8<Text>%</Text></Text>
+                            <Text>年化收益率</Text>
+                        </View>
+                        <View>
+                            <Text>56<Text>%</Text>天</Text>
+                            <Text>固定期限</Text>
+                        </View>
+                    </View>
+                    <View>
+                        <View>
+                            <Text>起投金额 100元</Text>
+                            <Text>起投金额 100元</Text>
+                        </View>
+                    </View>
+                </View>
+            </ScrollView>
         )
     }
 }
